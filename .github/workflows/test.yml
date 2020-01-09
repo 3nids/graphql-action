@@ -35,7 +35,7 @@ jobs:
       - id: test_with_int_arg
         uses: ./
         env:
-          GITHUB_TOKEN: ${{ secretes.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           query: |
             query pr_commits($pr_number: Int!) {
